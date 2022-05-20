@@ -9,12 +9,14 @@ refs.stopBtn.addEventListener('click', onStopClick);
 
 let intervalId = null;
 
-function onStartClick() {
+function onStartClick(e) {
+  refs.startBtn.setAttribute('disabled', true);
   cangeBackgroundColor();
   intervalId = setInterval(() => cangeBackgroundColor(), 1000);
 }
 
 function onStopClick() {
+  refs.startBtn.removeAttribute('disabled');
   clearInterval(intervalId);
 }
 
