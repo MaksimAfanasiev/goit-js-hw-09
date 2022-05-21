@@ -96,6 +96,7 @@ input {
 
 .form > button {
   margin-bottom: 0;
+  margin-left: 5px;
   padding: 5px;
   height: 20%;
   
