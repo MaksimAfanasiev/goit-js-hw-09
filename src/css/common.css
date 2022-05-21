@@ -19,3 +19,84 @@ img {
   max-width: 100%;
 }
 
+button {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+  width: 20vw;
+  border-radius: 4px;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+#datetime-picker {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 20vw;
+  border-color: black;
+  border-radius: 4px;
+}
+
+#datetime-picker:disabled {
+  cursor: default;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5px;
+  min-width: 70px;
+}
+
+.field:not(:last-child) {
+  margin-right: 15px;
+}
+
+.value {
+  font-size: xx-large;
+  font-weight: 500;
+  text-align: center;
+}
+
+.label {
+  font-size: large;
+  text-align: center;
+}
+
+label:not(:last-child) {
+  margin-right: 5px;
+}
+
+.form {
+  display: flex;
+  padding: 20px 10px;
+  align-items:flex-end;
+}
+
+input {
+  display: block;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+.form > button {
+  margin-bottom: 0;
+  padding: 5px;
+  height: 20%;
+  
+}
